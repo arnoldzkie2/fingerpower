@@ -99,7 +99,7 @@ const LatestNews: React.FC<AllNewsProps> = ({ news }) => {
 
     const t = useTranslations('news');
 
-    const sortedNews = [...news].sort((a, b) => {
+        const sortedNews = [...news].sort((a, b) => {
         const dateA = new Date(a.created_at) as any as number;
         const dateB = new Date(b.created_at) as any as number;
         return dateB - dateA;

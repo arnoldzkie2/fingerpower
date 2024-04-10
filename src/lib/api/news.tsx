@@ -1,8 +1,7 @@
 import axios from "axios"
+const URL = process.env.API_URL
 
-const URL = process.env.NEXT_PUBLIC_API_URL
-
-const DEPARTMENT = process.env.NEXT_PUBLIC_DEPARTMENT
+const DEPARTMENT = process.env.DEPARTMENT
 
 const getAllNews = async () => {
 
