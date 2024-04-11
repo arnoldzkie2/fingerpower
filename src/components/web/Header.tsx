@@ -44,7 +44,8 @@ const Header: React.FC<HeaderProps> = ({ }) => {
     return (
         <header className={`z-10 px-5 sm:px-10 md:px-16 lg:px-24 xl:px-36 2xl:px-44 h-16 md:h-20 fixed w-screen flex items-center top-0 left-0 justify-between ${scroll ? 'text-gray-700 bg-white shadow-lg' : 'text-white bg-transparent'}`}>
             <ScrollLink href={'/#home'} smooth={true} to='home' duration={2000} className='flex items-center'>
-                <Image src={'/logo.png'} alt='Logo' width={160} height={50} className='w-36 md:w-40 pb-1.5 md:pb-4 h-auto' />
+                <h1 className='font-black text-3xl'>FingerPower</h1>
+                {/* <Image src={'/logo.png'} alt='Logo' width={160} height={50} className='w-36 md:w-40 pb-1.5 md:pb-4 h-auto' /> */}
             </ScrollLink>
             <div className='absolute right-6 z-10 cursor-pointer lg:hidden sm:right-10 md:right-16' onClick={() => setIsOpen(prevState => !prevState)}>
                 {isOpen ?
@@ -64,11 +65,11 @@ const Header: React.FC<HeaderProps> = ({ }) => {
                 <Link href={'/'} className='flex items-center lg:hidden'>
                     <Image src={'/logo.png'} alt='Logo' width={160} height={50} className='w-36 md:w-40' />
                 </Link>
-                <ScrollLink to='about' duration={2000} smooth={true} href='#about' className={`lg:ml-auto px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer ${scroll && 'hover:text-blue-600'}`}>{t('about')}</ScrollLink>
-                <ScrollLink to='services' duration={2000} smooth={true} href='#services' className={`px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer  ${scroll && 'hover:text-blue-600'}`}>{t('services')}</ScrollLink>
-                <Link href='/news' className={`px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer  ${scroll && 'hover:text-blue-600'}`}>{t('news')}</Link>
+                <ScrollLink to='about' duration={2000} smooth={true} href='#about' className={`lg:ml-auto px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer ${scroll && 'hover:text-primary'}`}>{t('about')}</ScrollLink>
+                <ScrollLink to='services' duration={2000} smooth={true} href='#services' className={`px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer  ${scroll && 'hover:text-primary'}`}>{t('services')}</ScrollLink>
+                <Link href='/news' className={`px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer  ${scroll && 'hover:text-primary'}`}>{t('news')}</Link>
                 <div className={`${isOpen ? 'mt-5' : ''} flex items-center gap-8  lg:ml-auto`}>
-                    <ScrollLink to='contact' duration={2000} smooth={true} href='#waitlist' className={`hover:bg-gradient-to-b from-blue-700 via-blue-500 to-cyan-400 hover:text-white border border-white px-7 py-2 cursor-pointer flex items-center justify-center rounded-3xl ${scroll ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'}`}>{t('waitlist')}</ScrollLink>
+                    <ScrollLink to='contact' duration={2000} smooth={true} href='#waitlist' className={`border border-white px-7 py-2 cursor-pointer flex items-center justify-center rounded-3xl ${scroll ? 'bg-primary text-white' : 'bg-white text-primary'}`}>{t('waitlist')}</ScrollLink>
                     <Translate locale={locale} scroll={scroll} isOpen={isOpen} />
                 </div>
             </ul>

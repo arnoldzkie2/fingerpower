@@ -121,7 +121,7 @@ const RelatedNews: React.FC<AllNewsProps> = ({ news }) => {
                             <Link
                                 key={newsItem.id}
                                 href={`/news/${newsItem.id}`}
-                                className='sm:w-2/5 rounded-lg border-t-2 bg-white border-blue-600 p-5 shadow-md hover:scale-105 duration-150 flex flex-col gap-5 md:gap-8'
+                                className='sm:w-2/5 rounded-lg border-t-2 bg-white border-primary p-5 shadow-md hover:scale-105 duration-150 flex flex-col gap-5 md:gap-8'
                             >
                                 <h1 className='text-base md:text-lg lg:text-xl font-medium text-gray-900'>{newsItem.title && newsItem.title}</h1>
                                 <div className='w-full flex justify-between'>
@@ -135,7 +135,7 @@ const RelatedNews: React.FC<AllNewsProps> = ({ news }) => {
             {news.length > maxVisibleItems && (
                 <button
                     onClick={() => setMaxVisibleItems((prevState) => prevState + 6)}
-                    className='text-blue-500 hover:text-blue-700 cursor-pointer lg:text-lg'
+                    className='text-primary hover:text-primary cursor-pointer lg:text-lg'
                 >
                     Show All
                 </button>

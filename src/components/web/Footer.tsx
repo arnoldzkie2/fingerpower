@@ -23,10 +23,10 @@ const Footer: React.FC<FooterProps> = ({ }) => {
                 <div className='flex flex-col gap-4 md:w-1/3 lg:w-1/4'>
                     <Image src={'/logo.png'} alt='Logo' width={112} height={10} className='w-28' />
                     <p className='text-sm leading-6'>{footer('description')}</p>
-                    <ScrollLink to='about' duration={2000} smooth={true} href='#about' className='font-medium text-blue-600 cursor-pointer'>{footer('team')}</ScrollLink>
+                    <ScrollLink to='about' duration={2000} smooth={true} href='#about' className='font-medium text-primary cursor-pointer'>{footer('team')}</ScrollLink>
                 </div>
                 <ul className='flex flex-col gap-4'>
-                    <li className='text-lg font-medium md:mb-2 text-blue-600 uppercase'>{footer('contact')}</li>
+                    <li className='text-lg font-medium md:mb-2 text-primary uppercase'>{footer('contact')}</li>
                     <li className='flex gap-4'>
                         <FontAwesomeIcon icon={faPhone} className='w-4' />
                         <p className='text-sm lg:text-base'>China: +86 133 8613 7953</p>
@@ -50,18 +50,18 @@ const Footer: React.FC<FooterProps> = ({ }) => {
                 </ul>
 
                 <ul className='flex items-center gap-4 md:gap-3 md:flex-col md:items-start'>
-                    <li className='text-lg font-medium text-blue-600 md:mb-2'>{footer('company')}</li>
+                    <li className='text-lg font-medium text-primary md:mb-2'>{footer('company')}</li>
                     <li>
-                        <ScrollLink to='about' duration={2000} smooth={true} href='#about' className='text-sm lg:text-base hover:text-blue-600 cursor-pointer' >{footer('about')}</ScrollLink>
+                        <ScrollLink to='about' duration={2000} smooth={true} href='#about' className='text-sm lg:text-base hover:text-primary cursor-pointer' >{footer('about')}</ScrollLink>
                     </li>
                     <li>
-                        <ScrollLink to='contact' duration={2000} smooth={true} href='#contact' className='text-sm lg:text-base hover:text-blue-600 cursor-pointer' >{footer('contact')}</ScrollLink>
+                        <ScrollLink to='contact' duration={2000} smooth={true} href='#contact' className='text-sm lg:text-base hover:text-primary cursor-pointer' >{footer('contact')}</ScrollLink>
                     </li>
                     <li>
-                        <Link href={'/faq'} className='text-sm lg:text-base hover:text-blue-600' >{footer('faq')}</Link>
+                        <Link href={'/faq'} className='text-sm lg:text-base hover:text-primary' >{footer('faq')}</Link>
                     </li>
                     <li>
-                        <Link href={'/news'} className='text-sm lg:text-base hover:text-blue-600' >{footer('news')}</Link>
+                        <Link href={'/news'} className='text-sm lg:text-base hover:text-primary' >{footer('news')}</Link>
                     </li>
                 </ul>
 

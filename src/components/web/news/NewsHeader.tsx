@@ -24,7 +24,8 @@ const NewsHeader: React.FC<HeaderProps> = ({ }) => {
     return (
         <header className={`z-10 px-5 sm:px-10 md:px-16 lg:px-24 xl:px-36 2xl:px-44 h-16 md:h-20 fixed w-screen flex items-center top-0 left-0 justify-between ${scroll ? 'text-gray-700 bg-white shadow-lg' : 'text-white bg-transparent'}`}>
             <Link href={'/#home'} className='flex items-center'>
-                <Image src={'/logo.png'} alt='Logo' width={160} height={50} className='w-36 md:w-40 pb-1.5 md:pb-4' />
+                <h1 className='font-black text-3xl'>FingerPower</h1>
+                {/* <Image src={'/logo.png'} alt='Logo' width={160} height={50} className='w-36 md:w-40 pb-1.5 md:pb-4' /> */}
             </Link>
             <div className='absolute right-6 z-10 cursor-pointer lg:hidden sm:right-10 md:right-16' onClick={() => setIsOpen(prevState => !prevState)}>
                 {isOpen ?
@@ -44,12 +45,12 @@ const NewsHeader: React.FC<HeaderProps> = ({ }) => {
                 <Link href={'/'} className='flex items-center lg:hidden'>
                     <Image src={'/logo.png'} alt='Logo' width={160} height={50} className='w-36 md:w-40' />
                 </Link>
-                <Link href='/' className='lg:ml-auto px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-blue-600'>{t('home')}</Link>
-                <Link href='/#about' className='px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-blue-600'>{t('about')}</Link>
-                <Link href='/#services' className='px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-blue-600'>{t('services')}</Link>
-                <Link href='/news' className='px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-blue-600'>{t('news')}</Link>
+                <Link href='/' className='lg:ml-auto px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-primary'>{t('home')}</Link>
+                <Link href='/#about' className='px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-primary'>{t('about')}</Link>
+                <Link href='/#services' className='px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-primary'>{t('services')}</Link>
+                <Link href='/news' className='px-3 lg:px-2 xl:px-4 py-1.5 rounded-2xl cursor-pointer hover:text-primary'>{t('news')}</Link>
                 <div className={`${isOpen ? 'mt-5' : ''} flex items-center gap-8  lg:ml-auto`}>
-                    <Link href='/#contact' className={`hover:bg-gradient-to-b from-blue-700 via-blue-500 to-cyan-400 hover:text-white border border-white px-7 py-2 cursor-pointer flex items-center justify-center rounded-3xl ${scroll ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'}`}>{t('waitlist')}</Link>
+                    <Link href='/#contact' className={`border border-white px-7 py-2 cursor-pointer flex items-center justify-center rounded-3xl ${scroll ? 'bg-primary text-white' : 'bg-white text-primary'}`}>{t('waitlist')}</Link>
                     <Translate locale={locale} scroll={scroll} isOpen={isOpen} />
                 </div>
             </ul>

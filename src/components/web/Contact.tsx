@@ -262,7 +262,7 @@ const Contact: React.FC<ContactProps> = ({ }) => {
                     <h1 className='text-white text-2xl md:text-3xl lg:text-gray-800 md:border-gray-300 2xl:text-white lg:mt-4 font-light md:font-extralight w-full pb-4 border-b border-white'>{t('getintouch')}</h1>
                     <div className='flex w-full flex-col gap-5'>
                         <div className='flex gap-4'>
-                            <FontAwesomeIcon icon={faPhoneVolume} className='w-5 h-5 p-2 border border-blue-600 bg-white rounded-full text-blue-600' />
+                            <FontAwesomeIcon icon={faPhoneVolume} className='w-5 h-5 p-2 border border-primary bg-white rounded-full text-primary' />
                             <ul className='text-white md:text-gray-700 flex flex-col gap-3'>
                                 <li>China: +86 133 8613 7953</li>
                                 <li>Philipines: +63 9979 1572 44</li>
@@ -271,7 +271,7 @@ const Contact: React.FC<ContactProps> = ({ }) => {
                             </ul>
                         </div>
                         <div className='flex items-center gap-4'>
-                            <FontAwesomeIcon icon={faEnvelope} className='w-5 h-5 p-2 border border-blue-600 bg-white rounded-full text-blue-600' />
+                            <FontAwesomeIcon icon={faEnvelope} className='w-5 h-5 p-2 border border-primary bg-white rounded-full text-primary' />
                             <div className='text-white md:text-gray-700'>support@verbalace.com</div>
                         </div>
                     </div>
@@ -282,7 +282,7 @@ const Contact: React.FC<ContactProps> = ({ }) => {
                     <input type="number" className='px-3 py-2 border-b border-gray-300 text-gray-600 outline-none' name='phone' onChange={handleForm} value={formData.phone} placeholder={t('form.phone')} />
                     <input type="email" required className='px-3 py-2 border-b border-gray-300 text-gray-600 outline-none' name='email' onChange={handleForm} value={formData.email} placeholder={t('form.email')} />
                     <textarea required className='px-3 py-2 h-44 md:h-56 resize-none border-b border-gray-300 text-gray-600 outline-none' name='message' onChange={handleForm} value={formData.message} placeholder={t('form.message')} />
-                    <button disabled={isSubmitting && true} className={`${isSubmitting ? 'bg-blue-400' : 'bg-blue-600 text-white hover:bg-gradient-to-b from-blue-700 via-blue-500 to-cyan-400'} text-white h-12 mt-3 text-lg rounded-3xl`}>
+                    <button disabled={isSubmitting && true} className={`${isSubmitting ? 'bg-primary' : 'bg-primary text-white'} text-white h-12 mt-3 text-lg rounded-3xl`}>
                         {!isSubmitting ? t('form.button') :
                             <div className='flex items-center gap-3 w-full justify-center'>
                                 <FontAwesomeIcon icon={faSpinner} className='animate-spin' />

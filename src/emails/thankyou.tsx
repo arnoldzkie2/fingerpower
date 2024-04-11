@@ -29,7 +29,7 @@ export const ThankyouEmail = ({ name }: ThankyouEmailProps) => {
                     <Container className="border bg-white border-solid border-[#eaeaea] text-gray-600 rounded-3xl shadow-2xl my-[60px] mx-auto px-10 w-[1000px]">
                         <Heading className="font-normal">
                             <Img src='https://www.verbalace.com/logo.png' className='w-40 h-auto mx-auto' />
-                            <Text className='text-lg'>Greetings from VerbalAce Thank you <strong className='text-blue-600'>{name}</strong>  for taking the time to reach out to us through our contact form. We truly appreciate your interest in our online English learning platform.</Text>
+                            <Text className='text-lg'>Greetings from VerbalAce Thank you <strong className='text-primary'>{name}</strong>  for taking the time to reach out to us through our contact form. We truly appreciate your interest in our online English learning platform.</Text>
                         </Heading>
                         <Text className="text-[14px] leading-[24px]">
                             Your message has been received, and we want you to know that your inquiry is essential to us. Our team is currently reviewing your message to better understand your needs and provide you with the best possible support.                        </Text>
@@ -40,7 +40,7 @@ export const ThankyouEmail = ({ name }: ThankyouEmailProps) => {
                         <Text>If you have any additional information to provide or need further assistance, please don't hesitate to reach out to us directly at support@verbalace.com. We're more than happy to help.</Text>
                         <Text className='font-medium'>Best regards,</Text>
                         <Text><strong className='text-gray-700'>VerbalAce Support Team</strong></Text>
-                        <Link href='https://www.verbalace.com' className='text-blue-600 underline'>verbalace.com</Link>
+                        <Link href='https://www.verbalace.com' className='text-primary underline'>verbalace.com</Link>
                         <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
                     </Container>
                 </Body>

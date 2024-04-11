@@ -11,13 +11,13 @@ const Thankyou = () => {
             <h1 className='text-3xl md:text-4xl lg:text-5xl font-light lg:font-extralight mb-5 pb-5 border-b'>{t('h1')}</h1>
             <p className='text-sm md:text-base'>{t('h2')}</p>
             <div className='flex items-center gap-5'>
-                <span className='w-9 h-1.5 bg-blue-500 rounded-lg hidden md:block'></span>
-                <span className='w-9 h-1.5 bg-blue-500 rounded-lg hidden md:block'></span>
-                <span className='w-9 h-1.5 bg-blue-500 rounded-lg'></span>
-                <span className='w-9 h-1.5 bg-blue-500 rounded-lg'></span>
-                <span className='w-9 h-1.5 bg-blue-500 rounded-lg'></span>
-                <span className='w-9 h-1.5 bg-blue-500 rounded-lg'></span>
-                <span className='w-9 h-1.5 bg-blue-500 rounded-lg'></span>
+                <span className='w-9 h-1.5 bg-primary rounded-lg hidden md:block'></span>
+                <span className='w-9 h-1.5 bg-primary rounded-lg hidden md:block'></span>
+                <span className='w-9 h-1.5 bg-primary rounded-lg'></span>
+                <span className='w-9 h-1.5 bg-primary rounded-lg'></span>
+                <span className='w-9 h-1.5 bg-primary rounded-lg'></span>
+                <span className='w-9 h-1.5 bg-primary rounded-lg'></span>
+                <span className='w-9 h-1.5 bg-primary rounded-lg'></span>
             </div>
         </section>
     )
