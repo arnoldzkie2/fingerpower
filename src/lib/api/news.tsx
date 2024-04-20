@@ -7,7 +7,8 @@ const getAllNews = async () => {
     try {
         const { data } = await axios.get(`${URL}/api/news`, {
             params: {
-                departmentID: DEPARTMENT
+                departmentID: DEPARTMENT,
+                published: true
             }
         })
 
